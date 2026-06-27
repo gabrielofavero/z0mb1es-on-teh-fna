@@ -290,7 +290,10 @@ public class InputMgr
 		bool bEdge = (gs.Buttons.B == ButtonState.Pressed && prevGamePad.Buttons.B == ButtonState.Released);
 		bool escEdge = (ks.IsKeyDown(Keys.Escape) && prevKeyboard.IsKeyUp(Keys.Escape));
 
-		if (backEdge || bEdge || escEdge)
+		// In playable game states, ESC triggers pause instead of back
+		bool inGameState = GameState.state == 3 || GameState.state == 5 || GameState.state == 7;
+
+		if (backEdge || bEdge || (escEdge && !inGameState))
 		{
 			if (backEdge && Game1.tUTest)
 			{
@@ -306,9 +309,12 @@ public class InputMgr
 		}
 
 		// =====================================================================
-		// PAUSE / UNPAUSE — GamePad.Start
+		// PAUSE / UNPAUSE — GamePad.Start, Keyboard Escape
 		// =====================================================================
-		if (gs.Buttons.Start == ButtonState.Pressed && prevGamePad.Buttons.Start == ButtonState.Released)
+		bool startEdge = gs.Buttons.Start == ButtonState.Pressed && prevGamePad.Buttons.Start == ButtonState.Released;
+		bool escPauseEdge = escEdge && inGameState;
+
+		if (startEdge || escPauseEdge)
 		{
 			Sound.Play("back");
 
