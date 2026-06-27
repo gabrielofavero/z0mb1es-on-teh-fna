@@ -1,0 +1,546 @@
+[
+  {
+    "FileName": "1x1.png",
+    "RelativePath": "src/Content/gfx/1x1.png",
+    "Width": 1,
+    "Height": 1,
+    "ReferenceWidth": 1,
+    "ReferenceHeight": 1
+  },
+  {
+    "FileName": "glow.png",
+    "RelativePath": "src/Content/gfx/glow.png",
+    "Width": 128,
+    "Height": 128,
+    "ReferenceWidth": 128,
+    "ReferenceHeight": 128
+  },
+  {
+    "FileName": "maps.png",
+    "RelativePath": "src/Content/gfx/maps.png",
+    "Width": 2048,
+    "Height": 2048,
+    "ReferenceWidth": 2048,
+    "ReferenceHeight": 2048
+  },
+  {
+    "FileName": "maps2.png",
+    "RelativePath": "src/Content/gfx/maps2.png",
+    "Width": 2048,
+    "Height": 2048,
+    "ReferenceWidth": 2048,
+    "ReferenceHeight": 2048
+  },
+  {
+    "FileName": "mslogo.png",
+    "RelativePath": "src/Content/gfx/mslogo.png",
+    "Width": 655,
+    "Height": 200,
+    "ReferenceWidth": 655,
+    "ReferenceHeight": 200
+  },
+  {
+    "FileName": "skalogo.png",
+    "RelativePath": "src/Content/gfx/skalogo.png",
+    "Width": 400,
+    "Height": 268,
+    "ReferenceWidth": 400,
+    "ReferenceHeight": 268
+  },
+  {
+    "FileName": "1000.png",
+    "RelativePath": "src/Content/gfx/achievements/1000.png",
+    "Width": 64,
+    "Height": 64,
+    "ReferenceWidth": 64,
+    "ReferenceHeight": 64
+  },
+  {
+    "FileName": "10000.png",
+    "RelativePath": "src/Content/gfx/achievements/10000.png",
+    "Width": 64,
+    "Height": 64,
+    "ReferenceWidth": 64,
+    "ReferenceHeight": 64
+  },
+  {
+    "FileName": "ez_100k.png",
+    "RelativePath": "src/Content/gfx/achievements/ez_100k.png",
+    "Width": 64,
+    "Height": 64,
+    "ReferenceWidth": 64,
+    "ReferenceHeight": 64
+  },
+  {
+    "FileName": "ez_1room.png",
+    "RelativePath": "src/Content/gfx/achievements/ez_1room.png",
+    "Width": 64,
+    "Height": 64,
+    "ReferenceWidth": 64,
+    "ReferenceHeight": 64
+  },
+  {
+    "FileName": "ez_1round.png",
+    "RelativePath": "src/Content/gfx/achievements/ez_1round.png",
+    "Width": 64,
+    "Height": 64,
+    "ReferenceWidth": 64,
+    "ReferenceHeight": 64
+  },
+  {
+    "FileName": "ez_2rounds.png",
+    "RelativePath": "src/Content/gfx/achievements/ez_2rounds.png",
+    "Width": 64,
+    "Height": 64,
+    "ReferenceWidth": 64,
+    "ReferenceHeight": 64
+  },
+  {
+    "FileName": "ez_millonz.png",
+    "RelativePath": "src/Content/gfx/achievements/ez_millonz.png",
+    "Width": 64,
+    "Height": 64,
+    "ReferenceWidth": 64,
+    "ReferenceHeight": 64
+  },
+  {
+    "FileName": "im_100k.png",
+    "RelativePath": "src/Content/gfx/achievements/im_100k.png",
+    "Width": 64,
+    "Height": 64,
+    "ReferenceWidth": 64,
+    "ReferenceHeight": 64
+  },
+  {
+    "FileName": "im_asteroids.png",
+    "RelativePath": "src/Content/gfx/achievements/im_asteroids.png",
+    "Width": 64,
+    "Height": 64,
+    "ReferenceWidth": 64,
+    "ReferenceHeight": 64
+  },
+  {
+    "FileName": "im_invincible.png",
+    "RelativePath": "src/Content/gfx/achievements/im_invincible.png",
+    "Width": 64,
+    "Height": 64,
+    "ReferenceWidth": 64,
+    "ReferenceHeight": 64
+  },
+  {
+    "FileName": "im_laser.png",
+    "RelativePath": "src/Content/gfx/achievements/im_laser.png",
+    "Width": 64,
+    "Height": 64,
+    "ReferenceWidth": 64,
+    "ReferenceHeight": 64
+  },
+  {
+    "FileName": "im_million.png",
+    "RelativePath": "src/Content/gfx/achievements/im_million.png",
+    "Width": 64,
+    "Height": 64,
+    "ReferenceWidth": 64,
+    "ReferenceHeight": 64
+  },
+  {
+    "FileName": "im_nomove.png",
+    "RelativePath": "src/Content/gfx/achievements/im_nomove.png",
+    "Width": 64,
+    "Height": 64,
+    "ReferenceWidth": 64,
+    "ReferenceHeight": 64
+  },
+  {
+    "FileName": "im_win.png",
+    "RelativePath": "src/Content/gfx/achievements/im_win.png",
+    "Width": 64,
+    "Height": 64,
+    "ReferenceWidth": 64,
+    "ReferenceHeight": 64
+  },
+  {
+    "FileName": "mega.png",
+    "RelativePath": "src/Content/gfx/achievements/mega.png",
+    "Width": 64,
+    "Height": 64,
+    "ReferenceWidth": 64,
+    "ReferenceHeight": 64
+  },
+  {
+    "FileName": "tv_100k2.png",
+    "RelativePath": "src/Content/gfx/achievements/tv_100k2.png",
+    "Width": 64,
+    "Height": 64,
+    "ReferenceWidth": 64,
+    "ReferenceHeight": 64
+  },
+  {
+    "FileName": "tv_invincible.png",
+    "RelativePath": "src/Content/gfx/achievements/tv_invincible.png",
+    "Width": 64,
+    "Height": 64,
+    "ReferenceWidth": 64,
+    "ReferenceHeight": 64
+  },
+  {
+    "FileName": "tv_million2.png",
+    "RelativePath": "src/Content/gfx/achievements/tv_million2.png",
+    "Width": 64,
+    "Height": 64,
+    "ReferenceWidth": 64,
+    "ReferenceHeight": 64
+  },
+  {
+    "FileName": "tv_tower2.png",
+    "RelativePath": "src/Content/gfx/achievements/tv_tower2.png",
+    "Width": 64,
+    "Height": 64,
+    "ReferenceWidth": 64,
+    "ReferenceHeight": 64
+  },
+  {
+    "FileName": "tv_win.png",
+    "RelativePath": "src/Content/gfx/achievements/tv_win.png",
+    "Width": 64,
+    "Height": 64,
+    "ReferenceWidth": 64,
+    "ReferenceHeight": 64
+  },
+  {
+    "FileName": "test1.png",
+    "RelativePath": "src/Content/gfx/custom/test1.png",
+    "Width": 100,
+    "Height": 100,
+    "ReferenceWidth": 100,
+    "ReferenceHeight": 100
+  },
+  {
+    "FileName": "test2.png",
+    "RelativePath": "src/Content/gfx/custom/test2.png",
+    "Width": 100,
+    "Height": 100,
+    "ReferenceWidth": 100,
+    "ReferenceHeight": 100
+  },
+  {
+    "FileName": "test3.png",
+    "RelativePath": "src/Content/gfx/custom/test3.png",
+    "Width": 100,
+    "Height": 100,
+    "ReferenceWidth": 100,
+    "ReferenceHeight": 100
+  },
+  {
+    "FileName": "test4.png",
+    "RelativePath": "src/Content/gfx/custom/test4.png",
+    "Width": 100,
+    "Height": 100,
+    "ReferenceWidth": 100,
+    "ReferenceHeight": 100
+  },
+  {
+    "FileName": "test5.png",
+    "RelativePath": "src/Content/gfx/custom/test5.png",
+    "Width": 100,
+    "Height": 100,
+    "ReferenceWidth": 100,
+    "ReferenceHeight": 100
+  },
+  {
+    "FileName": "test6.png",
+    "RelativePath": "src/Content/gfx/custom/test6.png",
+    "Width": 100,
+    "Height": 100,
+    "ReferenceWidth": 100,
+    "ReferenceHeight": 100
+  },
+  {
+    "FileName": "test7.png",
+    "RelativePath": "src/Content/gfx/custom/test7.png",
+    "Width": 100,
+    "Height": 100,
+    "ReferenceWidth": 100,
+    "ReferenceHeight": 100
+  },
+  {
+    "FileName": "test8.png",
+    "RelativePath": "src/Content/gfx/custom/test8.png",
+    "Width": 100,
+    "Height": 100,
+    "ReferenceWidth": 100,
+    "ReferenceHeight": 100
+  },
+  {
+    "FileName": "atmos.png",
+    "RelativePath": "src/Content/gfx_2/atmos.png",
+    "Width": 240,
+    "Height": 240,
+    "ReferenceWidth": 240,
+    "ReferenceHeight": 240
+  },
+  {
+    "FileName": "blue.png",
+    "RelativePath": "src/Content/gfx_2/blue.png",
+    "Width": 240,
+    "Height": 240,
+    "ReferenceWidth": 240,
+    "ReferenceHeight": 240
+  },
+  {
+    "FileName": "city.png",
+    "RelativePath": "src/Content/gfx_2/city.png",
+    "Width": 512,
+    "Height": 512,
+    "ReferenceWidth": 512,
+    "ReferenceHeight": 512
+  },
+  {
+    "FileName": "grass.png",
+    "RelativePath": "src/Content/gfx_2/grass.png",
+    "Width": 512,
+    "Height": 512,
+    "ReferenceWidth": 512,
+    "ReferenceHeight": 512
+  },
+  {
+    "FileName": "gray.png",
+    "RelativePath": "src/Content/gfx_2/gray.png",
+    "Width": 240,
+    "Height": 240,
+    "ReferenceWidth": 240,
+    "ReferenceHeight": 240
+  },
+  {
+    "FileName": "hearts.png",
+    "RelativePath": "src/Content/gfx_2/hearts.png",
+    "Width": 512,
+    "Height": 512,
+    "ReferenceWidth": 512,
+    "ReferenceHeight": 512
+  },
+  {
+    "FileName": "moon1.png",
+    "RelativePath": "src/Content/gfx_2/moon1.png",
+    "Width": 512,
+    "Height": 192,
+    "ReferenceWidth": 512,
+    "ReferenceHeight": 192
+  },
+  {
+    "FileName": "moon2.png",
+    "RelativePath": "src/Content/gfx_2/moon2.png",
+    "Width": 512,
+    "Height": 192,
+    "ReferenceWidth": 512,
+    "ReferenceHeight": 192
+  },
+  {
+    "FileName": "moon3.png",
+    "RelativePath": "src/Content/gfx_2/moon3.png",
+    "Width": 512,
+    "Height": 192,
+    "ReferenceWidth": 512,
+    "ReferenceHeight": 192
+  },
+  {
+    "FileName": "punk.png",
+    "RelativePath": "src/Content/gfx_2/punk.png",
+    "Width": 336,
+    "Height": 320,
+    "ReferenceWidth": 336,
+    "ReferenceHeight": 320
+  },
+  {
+    "FileName": "punk2.png",
+    "RelativePath": "src/Content/gfx_2/punk2.png",
+    "Width": 336,
+    "Height": 320,
+    "ReferenceWidth": 336,
+    "ReferenceHeight": 320
+  },
+  {
+    "FileName": "robot.png",
+    "RelativePath": "src/Content/gfx_2/robot.png",
+    "Width": 585,
+    "Height": 384,
+    "ReferenceWidth": 585,
+    "ReferenceHeight": 384
+  },
+  {
+    "FileName": "scrap.png",
+    "RelativePath": "src/Content/gfx_2/scrap.png",
+    "Width": 512,
+    "Height": 512,
+    "ReferenceWidth": 512,
+    "ReferenceHeight": 512
+  },
+  {
+    "FileName": "sprites.png",
+    "RelativePath": "src/Content/gfx_2/sprites.png",
+    "Width": 512,
+    "Height": 512,
+    "ReferenceWidth": 512,
+    "ReferenceHeight": 512
+  },
+  {
+    "FileName": "thumbclick.png",
+    "RelativePath": "src/Content/gfx_2/thumbclick.png",
+    "Width": 128,
+    "Height": 128,
+    "ReferenceWidth": 128,
+    "ReferenceHeight": 128
+  },
+  {
+    "FileName": "thumbpad.png",
+    "RelativePath": "src/Content/gfx_2/thumbpad.png",
+    "Width": 128,
+    "Height": 128,
+    "ReferenceWidth": 128,
+    "ReferenceHeight": 128
+  },
+  {
+    "FileName": "thumbpad2.png",
+    "RelativePath": "src/Content/gfx_2/thumbpad2.png",
+    "Width": 128,
+    "Height": 128,
+    "ReferenceWidth": 128,
+    "ReferenceHeight": 128
+  },
+  {
+    "FileName": "urban.png",
+    "RelativePath": "src/Content/gfx_2/urban.png",
+    "Width": 512,
+    "Height": 512,
+    "ReferenceWidth": 512,
+    "ReferenceHeight": 512
+  },
+  {
+    "FileName": "viking.png",
+    "RelativePath": "src/Content/gfx_2/viking.png",
+    "Width": 512,
+    "Height": 512,
+    "ReferenceWidth": 512,
+    "ReferenceHeight": 512
+  },
+  {
+    "FileName": "diamond.png",
+    "RelativePath": "src/Content/gfx_2/scenes/diamond.png",
+    "Width": 80,
+    "Height": 88,
+    "ReferenceWidth": 80,
+    "ReferenceHeight": 88
+  },
+  {
+    "FileName": "face1.png",
+    "RelativePath": "src/Content/gfx_2/scenes/face1.png",
+    "Width": 88,
+    "Height": 100,
+    "ReferenceWidth": 88,
+    "ReferenceHeight": 100
+  },
+  {
+    "FileName": "face2.png",
+    "RelativePath": "src/Content/gfx_2/scenes/face2.png",
+    "Width": 92,
+    "Height": 100,
+    "ReferenceWidth": 92,
+    "ReferenceHeight": 100
+  },
+  {
+    "FileName": "heart.png",
+    "RelativePath": "src/Content/gfx_2/scenes/heart.png",
+    "Width": 80,
+    "Height": 88,
+    "ReferenceWidth": 80,
+    "ReferenceHeight": 88
+  },
+  {
+    "FileName": "viking.png",
+    "RelativePath": "src/Content/gfx_2/scenes/viking.png",
+    "Width": 460,
+    "Height": 512,
+    "ReferenceWidth": 460,
+    "ReferenceHeight": 512
+  },
+  {
+    "FileName": "1x1.png",
+    "RelativePath": "src/Content/gfx_2/zombie/1x1.png",
+    "Width": 1,
+    "Height": 1,
+    "ReferenceWidth": 1,
+    "ReferenceHeight": 1
+  },
+  {
+    "FileName": "concrete.png",
+    "RelativePath": "src/Content/gfx_2/zombie/concrete.png",
+    "Width": 640,
+    "Height": 360,
+    "ReferenceWidth": 640,
+    "ReferenceHeight": 360
+  },
+  {
+    "FileName": "fire.png",
+    "RelativePath": "src/Content/gfx_2/zombie/fire.png",
+    "Width": 640,
+    "Height": 360,
+    "ReferenceWidth": 640,
+    "ReferenceHeight": 360
+  },
+  {
+    "FileName": "grass.png",
+    "RelativePath": "src/Content/gfx_2/zombie/grass.png",
+    "Width": 640,
+    "Height": 360,
+    "ReferenceWidth": 640,
+    "ReferenceHeight": 360
+  },
+  {
+    "FileName": "grid.png",
+    "RelativePath": "src/Content/gfx_2/zombie/grid.png",
+    "Width": 640,
+    "Height": 360,
+    "ReferenceWidth": 640,
+    "ReferenceHeight": 360
+  },
+  {
+    "FileName": "neko.png",
+    "RelativePath": "src/Content/gfx_2/zombie/neko.png",
+    "Width": 640,
+    "Height": 360,
+    "ReferenceWidth": 640,
+    "ReferenceHeight": 360
+  },
+  {
+    "FileName": "psychoneko.png",
+    "RelativePath": "src/Content/gfx_2/zombie/psychoneko.png",
+    "Width": 640,
+    "Height": 360,
+    "ReferenceWidth": 640,
+    "ReferenceHeight": 360
+  },
+  {
+    "FileName": "ska.png",
+    "RelativePath": "src/Content/gfx_2/zombie/ska.png",
+    "Width": 640,
+    "Height": 360,
+    "ReferenceWidth": 640,
+    "ReferenceHeight": 360
+  },
+  {
+    "FileName": "space.png",
+    "RelativePath": "src/Content/gfx_2/zombie/space.png",
+    "Width": 640,
+    "Height": 360,
+    "ReferenceWidth": 640,
+    "ReferenceHeight": 360
+  },
+  {
+    "FileName": "sprites.png",
+    "RelativePath": "src/Content/gfx_2/zombie/sprites.png",
+    "Width": 640,
+    "Height": 640,
+    "ReferenceWidth": 640,
+    "ReferenceHeight": 640
+  }
+]

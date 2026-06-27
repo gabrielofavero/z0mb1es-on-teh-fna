@@ -1,0 +1,50 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.sln.docstates
+*.userprefs
+.vs/
+*.csproj.user
+*.DotSettings.user
+
+# Build output
+**/bin/
+**/obj/
+packages/
+*.nupkg
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# VS Code
+.vscode/
+
+# OS
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# NuGet
+project.assets.json
+*.nuget.props
+*.nuget.targets
+*.dgspec.json
+
+# Save Game
+savegame.dat
+
+# Game assets
+src/Content
+src/scene
+src/chardef
+src/gfx
+src/gfx_2
+
+# Asset Extractor
+asset-extractor/*.xap
+asset-extractor/tmp

@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>ZombiesWP7</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="FNA\**" />
+    <ProjectReference Include="FNA\FNA.Core.csproj" />
+  </ItemGroup>
+  <!-- Content: Copy all XNB + companion runtime data files to output (stripping Content\ prefix) -->
+  <ItemGroup>
+    <Content Include="Content\**\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>%(RecursiveDir)%(FileName)%(Extension)</Link>
+    </Content>
+  </ItemGroup>
+
+  <!-- Native FNA libraries: copy the correct architecture DLLs to output -->
+  <ItemGroup Condition="'$(OS)' == 'Windows_NT'">
+    <Content Include="fnalibs\x64\*.dll" Condition="$([System.Environment]::Is64BitOperatingSystem)">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>%(FileName)%(Extension)</Link>
+    </Content>
+    <Content Include="fnalibs\x86\*.dll" Condition="!$([System.Environment]::Is64BitOperatingSystem)">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>%(FileName)%(Extension)</Link>
+    </Content>
+  </ItemGroup>
+</Project>
