@@ -1,0 +1,3 @@
+[submodule "asset-extractor/xnb_parse"]
+	path = asset-extractor/xnb_parse
+	url = https://github.com/fesh0r/xnb_parse.git
