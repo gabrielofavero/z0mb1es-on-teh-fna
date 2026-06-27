@@ -26,8 +26,8 @@ public class HelpAndOptions : MenuLevel
 		};
 		infos = new StringBuilder[2]
 		{
-			new StringBuilder("Version 1.0"),
-			new StringBuilder("Contact us: support@ska-studios.com")
+			new StringBuilder("z0mb1es (on teh fna)"),
+			new StringBuilder("Unofficial project. Version 0.1a")
 		};
 	}
 
