@@ -1,0 +1,11 @@
+D:\Gabriel\Documentos\Coding\FNA\z0mb1es-recompilation\src\FNA\bin\Release\net8.0\FNA.dll.config
+D:\Gabriel\Documentos\Coding\FNA\z0mb1es-recompilation\src\FNA\bin\Release\net8.0\FNA.deps.json
+D:\Gabriel\Documentos\Coding\FNA\z0mb1es-recompilation\src\FNA\bin\Release\net8.0\FNA.dll
+D:\Gabriel\Documentos\Coding\FNA\z0mb1es-recompilation\src\FNA\bin\Release\net8.0\FNA.pdb
+D:\Gabriel\Documentos\Coding\FNA\z0mb1es-recompilation\src\FNA\obj_core\Release\net8.0\FNA.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Gabriel\Documentos\Coding\FNA\z0mb1es-recompilation\src\FNA\obj_core\Release\net8.0\FNA.Core.csproj.CoreCompileInputs.cache
+D:\Gabriel\Documentos\Coding\FNA\z0mb1es-recompilation\src\FNA\obj_core\Release\net8.0\FNA.Core.sourcelink.json
+D:\Gabriel\Documentos\Coding\FNA\z0mb1es-recompilation\src\FNA\obj_core\Release\net8.0\FNA.dll
+D:\Gabriel\Documentos\Coding\FNA\z0mb1es-recompilation\src\FNA\obj_core\Release\net8.0\refint\FNA.dll
+D:\Gabriel\Documentos\Coding\FNA\z0mb1es-recompilation\src\FNA\obj_core\Release\net8.0\FNA.pdb
+D:\Gabriel\Documentos\Coding\FNA\z0mb1es-recompilation\src\FNA\obj_core\Release\net8.0\ref\FNA.dll
