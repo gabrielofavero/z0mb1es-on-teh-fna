@@ -1,6 +1,7 @@
 # .NET
 bin/
 obj/
+obj_*/
 *.user
 *.suo
 *.sln.docstates
