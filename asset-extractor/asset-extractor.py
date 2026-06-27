@@ -9,6 +9,7 @@ and assembles the final output matching src/Content structure.
 Usage:
     python asset-extractor.py           # full extraction, tmp deleted
     python asset-extractor.py --keep-tmp # keep temp files for inspection
+    python asset-extractor.py --no-move # keep output in asset-extractor/Content/
 """
 
 import os
@@ -183,8 +184,8 @@ def step_convert_wma(extracted_dir: Path):
     encoder = find_ffmpeg()
     if not encoder:
         print()
-        print('WARNING: ffmpeg not found in PATH.')
-        print('  WMA files cannot be converted automatically.')
+        print('ERROR: ffmpeg not found in PATH.')
+        print('  WMA audio files cannot be converted automatically.')
         print()
         print('  Install ffmpeg for your platform:')
         print('    Windows:  winget install ffmpeg')
@@ -192,13 +193,7 @@ def step_convert_wma(extracted_dir: Path):
         print('    macOS:    brew install ffmpeg')
         print('    Linux:    sudo apt install ffmpeg  (or your package manager)')
         print()
-        print('  The following files need conversion:')
-        for wma_path in wma_files:
-            rel = wma_path.relative_to(content_dir)
-            print(f'    {rel} -> {rel.with_suffix(".ogg")}')
-        print()
-        print('  Continuing with remaining steps...')
-        return
+        sys.exit(1)
 
     print(f'Using ffmpeg: {encoder}')
 
@@ -339,8 +334,12 @@ def main():
     parser = argparse.ArgumentParser(description='Extract Z0MB1ES assets from .xap')
     parser.add_argument('--keep-tmp', action='store_true',
                         help='keep temporary files after extraction')
+    parser.add_argument('--no-move', action='store_true',
+                        help='always keep output in asset-extractor/Content/ ' +
+                             '(do not auto-move to src/Content)')
     args = parser.parse_args()
     main.keep_tmp = args.keep_tmp
+    main.no_move = args.no_move
 
     print('Z0MB1ES Asset Extractor')
     print('=' * 60)
@@ -370,10 +369,22 @@ def main():
         # Step 5: Assemble final output
         step_assemble_output()
 
+        # Move to src/Content if it doesn't exist (unless --no-move)
+        final_output_dir = OUTPUT_DIR
+        if not getattr(main, 'no_move', False) and not SRC_CONTENT_DIR.exists():
+            print()
+            print(f'Moving {OUTPUT_DIR.name}/ -> {SRC_CONTENT_DIR.parent.name}/{SRC_CONTENT_DIR.name}/')
+            shutil.move(str(OUTPUT_DIR), str(SRC_CONTENT_DIR))
+            final_output_dir = SRC_CONTENT_DIR
+        elif SRC_CONTENT_DIR.exists() and not getattr(main, 'no_move', False):
+            print()
+            print(f'NOTE: {SRC_CONTENT_DIR} already exists.')
+            print(f'  Output left in {OUTPUT_DIR} for manual merging.')
+
         print()
         print('=' * 60)
         print('DONE!')
-        print(f'Output is in: {OUTPUT_DIR}')
+        print(f'Output is in: {final_output_dir}')
         print('=' * 60)
     finally:
         # Clean up tmp directory unless --keep-tmp was passed

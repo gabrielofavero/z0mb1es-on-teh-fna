@@ -41,6 +41,7 @@ savegame.dat
 
 # Game assets
 src/Content
+!src/Content/png_manifest.json
 src/scene
 src/chardef
 src/gfx

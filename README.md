@@ -33,7 +33,17 @@ The original game only supported touch input. I've added a minimal structure for
 
 ### FNA and fnalibs
 
-Both FNA and the native libs (fnalibs) are included in the repo, so you don't need to grab them separately. Just clone and you're good.
+Both FNA and the native libs (fnalibs) are included in the repo, so you don't need to grab them separately. Just clone (with submodules) and you're good. To clone with everything included:
+
+```sh
+git clone --recurse-submodules https://github.com/your-username/z0mb1es-on-teh-fna.git
+```
+
+If you already cloned without `--recurse-submodules`, run this to pull in the submodule:
+
+```sh
+git submodule update --init --recursive
+```
 
 ### Game assets
 
@@ -51,7 +61,10 @@ cd asset-extractor
 python asset-extractor.py
 ```
 
-4. The extracted `asset-extractor/Content/` folder is already in the right structure the game requires. Just move it to src/
+4. The extractor will do the rest:
+   - If **`src/Content` doesn't exist**, the folder is moved there automatically.
+   - If **`src/Content` already exists** (e.g., you're re-extracting or updating), the output stays in `asset-extractor/Content/` for you to merge manually.
+   - Use `--no-move` to always keep the output in `asset-extractor/Content/` and `--keep-tmp` for keeping the temporary files made during the process.
 
 ## Building
 
