@@ -49,3 +49,4 @@ src/gfx_2
 # Asset Extractor
 asset-extractor/*.xap
 asset-extractor/tmp
+asset-extractor/Content
