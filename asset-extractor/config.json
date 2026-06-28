@@ -1,0 +1,41 @@
+{
+    "content": {
+        "z0mb1es": {
+            "type": "package",
+            "asset-type": "XAP",
+            "src": "./*.xap"
+        }
+    },
+    "convert": {
+        "enabled": true,
+        "content": {
+            "z0mb1es": {
+                "convert-wma-to-ogg": true,
+                "ignore": [
+                    "Arial.xnb"
+                ]
+            }
+        }
+    },
+    "output": {
+        "enabled": true,
+        "delete-extracted-dir": true,
+        "delete-converted-dir": true,
+        "content": {
+            "z0mb1es": {
+                "enabled": true,
+                "move-to-Content": [
+                    "chardef/",
+                    "gfx/",
+                    "gfx_2/",
+                    "maps/",
+                    "scene/"
+                ],
+                "copy-to-content": [
+                    "./png_manifest.json"
+                ],
+                "keep-only-content": true
+            }
+        }
+    }
+}

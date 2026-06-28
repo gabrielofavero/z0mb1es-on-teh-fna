@@ -47,13 +47,11 @@ savegame.dat
 
 # Game assets
 src/Content
-!src/Content/png_manifest.json
-src/scene
-src/chardef
-src/gfx
-src/gfx_2
 
 # Asset Extractor
 asset-extractor/*.xap
-asset-extractor/tmp
 asset-extractor/Content
+asset-extractor/extracted/
+asset-extractor/converted/
+asset-extractor/output/
+asset-extractor/Content/

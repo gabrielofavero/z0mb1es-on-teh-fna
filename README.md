@@ -4,6 +4,8 @@ This is a recompilation of the WP7 game `z0mb1es (on teh phone)`. We had some gr
 
 The idea of this project is porting it to FNA so that it can be preserved. Until now, this game was basically dead media, so we will finally get to play the exclusive modes again :)
 
+> **Cloning:** This repo uses git submodules. Clone with `git clone --recurse-submodules <url>`. If you already cloned without, run `git submodule update --init --recursive`.
+
 ## What remains and what has changed
 
 The goal here is to keep the experience as close to the original as possible. However, since this was a Windows Phone title built on Xbox infrastructure, some adaptations had to be made.
@@ -47,24 +49,36 @@ We target [FNA 26.06](https://fna.flibitijibibo.com/archive/FNA-2606.zip), but a
 
 ### Game assets
 
-The original game assets come from a Windows Phone `.xap` package which you'll need to obtain separately (e.g., from a WP7 device backup or an app archive). An extraction script is provided.
+The original game assets come from a Windows Phone `.xap` package which you'll need to obtain separately (e.g., from a WP7 device backup or an app archive). This project uses [xna-360-and-wp7-asset-extractor](https://github.com/gabrielofavero/xna-360-and-wp7-asset-extractor) (included as a submodule) to extract and convert them.
 
-1. Place the version 1.0 `.xap` file in `asset-extractor/`
+1. Place the version 1.0 `.xap` file in `asset-extractor/`.
 2. Install ffmpeg for your OS (required for WMA→OGG conversion):
    - **Windows:** `winget install ffmpeg`
    - **macOS:** `brew install ffmpeg`
    - **Linux:** `sudo apt install ffmpeg`
-3. Run the extractor:
+3. Run the extractor with the included config:
 
 ```sh
-cd asset-extractor
-python asset-extractor.py
+python asset-extractor/xna-360-and-wp7-asset-extractor/asset-extractor.py config asset-extractor/config.json
 ```
 
-4. The extractor will do the rest:
-   - If **`src/Content` doesn't exist**, the folder is moved there automatically.
-   - If **`src/Content` already exists** (e.g., you're re-extracting or updating), the output stays in `asset-extractor/Content/` for you to merge manually.
-   - Use `--no-move` to always keep the output in `asset-extractor/Content/` and `--keep-tmp` for keeping the temporary files made during the process.
+4. The extractor will:
+   - Extract the `.xap` into `extracted/z0mb1es/`
+   - Convert all `.xnb` files (except `Arial.xnb`) to standard formats
+   - Convert `.wma` audio to `.ogg`
+   - Move companion folders (`chardef/`, `gfx/`, `gfx_2/`, `maps/`, `scene/`) into `Content/`
+   - Copy `Arial.xnb` and `png_manifest.json` from `src/Content/` into the output
+   - Assemble everything into `output/z0mb1es/`
+
+5. Move the result to `src/Content`:
+
+```sh
+# If src/Content already exists, back it up first
+mv src/Content src/Content.bak
+mv output/z0mb1es/Content src/Content
+```
+
+> The `asset-extractor/config.json` file controls the extraction pipeline. See the [extractor's README](https://github.com/gabrielofavero/xna-360-and-wp7-asset-extractor#configuration) for all available options.
 
 ## Building
 
@@ -122,5 +136,6 @@ This project is not intended to infringe on any copyrights. If you are a rights 
 - **[Ska Studios](https://ska-studios.com/)** — for the original games that made all of this possible
 - **[OMNIViOLET](https://x.com/OmnivioletS)** — for the outstanding ports of IMAGWZ1I
 - **[Ethan Lee](https://fna-xna.github.io/)** — for FNA, the XNA 4.0 reimplementation that powers this project
-- **[Andrew McRae](https://github.com/fesh0r/xnb_parse)** — for building a python asset extractor that actually works with WP7 and 360 assets
+- **[Andrew McRae](https://github.com/fesh0r/xnb_parse)** — for building the XNB parser that makes WP7 and 360 asset extraction possible
+- **[ryzendew](https://github.com/ryzendew/XBLA-Extract)** — for the Xbox 360 STFS extraction tooling
 - **My mom** — Love you ma
