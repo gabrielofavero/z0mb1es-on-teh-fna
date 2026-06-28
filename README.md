@@ -31,19 +31,19 @@ The original game only supported touch input. I've added a minimal structure for
 
 ## Preparing
 
-### FNA and fnalibs
+### FNA
 
-Both FNA and the native libs (fnalibs) are included in the repo, so you don't need to grab them separately. Just clone (with submodules) and you're good. To clone with everything included:
+We target [FNA 26.06](https://fna.flibitijibibo.com/archive/FNA-2606.zip), but a more recent version should also work.
 
-```sh
-git clone --recurse-submodules https://github.com/your-username/z0mb1es-on-teh-fna.git
-```
+1. Download FNA from [fna-xna.github.io/download/](https://fna-xna.github.io/download/)
+2. Extract the contents of the archive into `src/FNA/`
 
-If you already cloned without `--recurse-submodules`, run this to pull in the submodule:
+### Native libraries (fnalibs)
 
-```sh
-git submodule update --init --recursive
-```
+1. Download the latest build artifacts from [github.com/FNA-XNA/fnalibs-dailies/actions](https://github.com/FNA-XNA/fnalibs-dailies/actions)
+2. Extract the contents into `fnalibs/`
+
+> A full guide is available [here](https://fna-xna.github.io/docs/1%3A-Setting-Up-FNA/#step-2-download-native-libraries).
 
 ### Game assets
 

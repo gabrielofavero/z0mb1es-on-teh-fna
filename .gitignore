@@ -36,6 +36,12 @@ project.assets.json
 *.nuget.targets
 *.dgspec.json
 
+# FNA (download separately, see README)
+src/FNA/**
+
+# Native libs (download separately, see README)
+fnalibs/**
+
 # Save Game
 savegame.dat
 
